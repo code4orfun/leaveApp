@@ -6,10 +6,10 @@ include 'login.php';
 <?php
 session_start();
 if(isset($_SESSION['id'])){
-    header('location:admin\admin.php');
+    header('location:admin.php');
 }
 elseif (isset($_SESSION['emp_id'])){
-    header('location:employee\employee.php');
+    header('location:employee.php');
 }
 
 

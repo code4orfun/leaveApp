@@ -32,7 +32,7 @@ if(!empty($_POST['login'])) {
         $_SESSION['id'] = $sql;
 //        $_SESSION['name'] = $name;
 
-        header('Location:admin\admin.php');
+        header('Location:admin.php');
     }
     else if(mysqli_num_rows($result_id) > 0){
         session_start();
@@ -40,7 +40,7 @@ if(!empty($_POST['login'])) {
         $_SESSION['emp_id'] = $emp;
 //        $_SESSION['name'] = $name;
 
-        header('Location:employee\employee.php');
+        header('Location:employee.php');
     }
     else {
         header('Location:index.php');
